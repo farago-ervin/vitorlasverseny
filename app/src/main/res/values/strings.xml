@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">vitorlasverseny</string>
+    <string name="name">Nev</string>
+    <string name="password">Jelszo</string>
+    <string name="login">Bejelentkezes</string>
+    <string name="registration">Regisztráció</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="Googlemaps">maps</string>
+</resources>
