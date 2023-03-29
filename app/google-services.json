@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1051095204445",
+    "project_id": "vitorlasversenyapp",
+    "storage_bucket": "vitorlasversenyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051095204445:android:40e5766b628240e6d243b4",
+        "android_client_info": {
+          "package_name": "com.example.vitorlasversenyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051095204445-5h89etsq8sdsv5uc3iqp7n3hiknhu3qo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2LFg6HixOSbAHgQ-3pTpcfL6HZJG1y8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051095204445-5h89etsq8sdsv5uc3iqp7n3hiknhu3qo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
