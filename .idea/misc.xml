@@ -3,15 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/hp-omen/Desktop/backup/backup10good/Vitorlasversenyapp/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Vitorlasversenyapp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.196" />
         <entry key="..\:/Vitorlasversenyapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
-        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_invite_code.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1685" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.161" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_all_user_locations.xml" value="0.171875" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_invite_code.xml" value="0.264" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_join_circle.xml" value="0.171875" />
         <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_login.xml" value="0.19010416666666666" />
-        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
-        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_name.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_my_navigation.xml" value="0.1875" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_name.xml" value="0.2171875" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_navigation.xml" value="0.11197916666666667" />
         <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_password.xml" value="0.2046875" />
         <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_register.xml" value="0.2046875" />
         <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_register_acitvity.xml" value="0.18645833333333334" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/activity_user_location_main.xml" value="0.2" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/app_bar_user_location_main.xml" value="0.1875" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/content_my_navigation.xml" value="0.1875" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/content_user_location_main.xml" value="0.264" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/fragment_gallery.xml" value="0.18385416666666668" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/fragment_home.xml" value="0.18333333333333332" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/fragment_slideshow.xml" value="0.18333333333333332" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/layout/nav_header_user_location_main.xml" value="0.2" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/menu/activity_main_drawer.xml" value="0.4" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/menu/my_navigation.xml" value="0.18333333333333332" />
+        <entry key="..\:/Vitorlasversenyapp/app/src/main/res/menu/user_location_main.xml" value="0.1875" />
       </map>
     </option>
   </component>

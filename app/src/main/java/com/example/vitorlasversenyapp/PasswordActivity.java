@@ -34,11 +34,12 @@ import android.widget.Toast;
             myIntent.putExtra("email",email);
             myIntent.putExtra("password",e5_password.getText().toString());
             startActivity(myIntent);
+            finish();
 
         }
         else
         {
-            Toast.makeText(getApplicationContext(),"Password length should be more than 6 characters.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"A jelszónak legalább 6 karakteresnek kell lennie.",Toast.LENGTH_SHORT).show();
         }
     }
 }

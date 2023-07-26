@@ -12,18 +12,19 @@
         android:layout_height="96dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:src="@drawable/placeholder"
         android:layout_marginStart="158dp"
-        android:layout_marginEnd="157dp" />
+        android:layout_marginEnd="157dp"
+        android:onClick="selectImage"
+        android:src="@drawable/placeholder" />
 
     <EditText
         android:id="@+id/editText6"
         android:layout_width="match_parent"
         android:layout_height="67dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="504dp"
+        android:layout_marginBottom="400dp"
         android:ems="10"
-        android:hint="Enter your name"
+        android:hint="Adja meg a felhasználónevét"
         android:inputType="textPersonName" />
 
     <Button
@@ -33,7 +34,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="147dp"
-        android:layout_marginBottom="377dp"
-        android:text="Next" />
+        android:layout_marginBottom="200dp"
+        android:onClick="generateCode"
+        android:text="TOVÁBB" />
 
 </RelativeLayout>

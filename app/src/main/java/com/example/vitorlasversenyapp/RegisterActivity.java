@@ -47,11 +47,11 @@ public class RegisterActivity extends AppCompatActivity {
 
                             if(!check)
                             {
-                                //email does not exist so we can create it.
+
                                 Intent myIntent = new Intent(RegisterActivity.this,PasswordActivity.class);
                                 myIntent.putExtra("email",e4_email.getText().toString());
                                 startActivity(myIntent);
-
+                                finish();
 
                             }
                             else

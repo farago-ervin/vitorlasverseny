@@ -11,9 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="196dp"
-        android:layout_marginBottom="490dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textEmailAddress" />
@@ -30,14 +28,14 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="121dp"
+        android:layout_width="188dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:onClick="login"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="140dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginEnd="109dp"
         android:layout_marginBottom="287dp"
-        android:text="LOGIN" />
+        android:onClick="login"
+        android:text="BEJELENTKEZÉS" />
 </RelativeLayout>

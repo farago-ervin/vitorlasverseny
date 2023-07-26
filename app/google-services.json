@@ -7,12 +7,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1051095204445:android:40e5766b628240e6d243b4",
+        "mobilesdk_app_id": "1:1051095204445:android:5bef39adc6c8d451d243b4",
         "android_client_info": {
           "package_name": "com.example.vitorlasversenyapp"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "1051095204445-dtfopbmtodlhk8hkmr3d5e81e0v8j612.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vitorlasversenyapp",
+            "certificate_hash": "1cafd80202aff7e2331c2d6841e10fb9963a61ee"
+          }
+        },
         {
           "client_id": "1051095204445-5h89etsq8sdsv5uc3iqp7n3hiknhu3qo.apps.googleusercontent.com",
           "client_type": 3

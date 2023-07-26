@@ -3,9 +3,12 @@ package com.example.vitorlasversenyapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -35,11 +38,15 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful())
                         {
-                            Toast.makeText(getApplicationContext(),"User logged in successfully",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"Sikeres bejelentkezés!",Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(LoginActivity.this,UserLocationMainActivity.class);
+                            startActivity(intent);
+                            finish();
+
                         }
                         else
                         {
-                            Toast.makeText(getApplicationContext(),"Wrong email or password",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"Hibás e-mail vagy jelszó",Toast.LENGTH_LONG).show();
                         }
                     }
                 });

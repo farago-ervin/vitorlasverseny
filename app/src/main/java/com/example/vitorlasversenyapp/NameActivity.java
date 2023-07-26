@@ -1,14 +1,22 @@
 package com.example.vitorlasversenyapp;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.net.Uri;
 import android.view.View;
 
+import android.content.ContentValues;
+import android.provider.MediaStore;
+import android.widget.ImageView;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.theartofdev.edmodo.cropper.CropImage;
+import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -23,7 +31,7 @@ public class NameActivity extends AppCompatActivity {
     EditText e6_name;
     CircleImageView circleImageView;
 
-        Uri resultUri;
+    Uri resultUri;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,23 +59,46 @@ public class NameActivity extends AppCompatActivity {
         if (resultUri != null)
         {
             Intent myIntent = new Intent(NameActivity.this,InviteCodeActivity.class);
-             myIntent.putExtra("name",e6_name.getText().toString());
-             myIntent.putExtra("email",email);
-             myIntent.putExtra("password",password);
-             myIntent.putExtra("date",date);
-             myIntent.putExtra("isSharing","false");
-             myIntent.putExtra("code",code);
-             myIntent.putExtra("imageUri",resultUri);
+            myIntent.putExtra("name",e6_name.getText().toString());
+            myIntent.putExtra("email",email);
+            myIntent.putExtra("password",password);
+            myIntent.putExtra("date",date);
+            myIntent.putExtra("isSharing","false");
+            myIntent.putExtra("code",code);
+            myIntent.putExtra("imageUri",resultUri);
 
             startActivity(myIntent);
+            finish();
         }
-        else 
+        else
         {
-            Toast.makeText(getApplicationContext(), "Please choose an image", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Kérem válasszon képet", Toast.LENGTH_SHORT).show();
         }
 
 
     }
 
+    public void selectImage(View v) {
+        CropImage.activity()
+                .setGuidelines(CropImageView.Guidelines.ON)
+                .setAspectRatio(1, 1)
+                .start(this);
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+            CropImage.ActivityResult result = CropImage.getActivityResult(data);
+            if (resultCode == RESULT_OK) {
+                resultUri = result.getUri();
+
+                circleImageView.setImageURI(resultUri);
+            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
+                Exception error = result.getError();
+                Toast.makeText(this, "Crop failed: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        }
+
+    }
 }
